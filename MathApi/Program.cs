@@ -21,5 +21,10 @@ app.MapGet("/", () =>
     })
     .WithName("Hello");
 
+app.MapGet("/test", () =>
+{
+    return "test";
+});
+
 
 app.Run();
