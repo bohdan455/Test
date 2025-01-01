@@ -15,4 +15,11 @@ app.MapGet("/sum", (int a, int b) =>
     })
     .WithName("GetWeatherForecast");
 
+app.MapGet("/", (int a, int b) =>
+    {
+        return "Hello world";
+    })
+    .WithName("Hello");
+
+
 app.Run();
